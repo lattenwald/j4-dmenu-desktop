@@ -40,6 +40,8 @@ public:
 
         puts(exec.c_str());
 
+        command << "swaymsg exec -- ";
+
         if(this->app.terminal) {
             // Execute in terminal
 
